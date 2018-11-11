@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>DEMO </title>
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.bigcolorpicker.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/draw.js"></script>
+	<script src="js/storage.js"></script>
+	
+	<link rel="stylesheet" href="css/canvas.css" type="text/css" />
+	<link rel="stylesheet" href="css/jquery.bigcolorpicker.css" type="text/css" />
+	
+</head>
+<body>
+<div id="draw">
+
+		<div id="logo">绘画板</div>
+
+		<ul class="draw_controller cf">
+			<li class="normal pencil" title="铅笔"></li>
+			<li class="normal handwriting" title="涂鸦"></li>
+			<li class="normal line showLine" title="线条大小"></li>
+			<li class="normal showColor" id="chooseColor" title="选择颜色"></li>
+			<li class="normal rubber" title="橡皮擦"></li>
+
+			<span>|</span>
+
+			<li class="normal drawLine" title="画直线"></li>
+			<li class="normal square" title="方形"></li>
+			<li class="normal circle" title="圆"></li>
+			<li class="normal fill" title="填充前景"></li>
+
+			<span>|</span>
+
+			<li class="normal cancel" title="撤销上一个操作"></li>
+			<li class="normal next" title="重做上一个操作"></li>
+			<li class="normal clearContext" title="清屏"></li>
+			<li class="normal save" title="保存"></li>
+			<li class="normal downloadImage" title="下载"><a href="#" download="picture.png" id="downloadImage_a"></a></li>
+		</ul>
+
+
+		<div class="canvas_container">
+			<canvas id="canvas">
+				浏览器不支持
+			</canvas>
+
+			<canvas id="canvas_bak"></canvas>
+		</div>
+
+	</div>
+</body>
+</html>

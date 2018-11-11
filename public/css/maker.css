@@ -1,0 +1,48 @@
+	.container{
+        display: grid;
+        width: 100%;
+        grid-template-rows: auto; 
+        grid-template-columns: 3fr 14fr 3fr; 
+    }
+	.inputbox{
+		text-align: center; 
+		margin: 16px;
+		font-family: Microsoft JhengHei;
+		font-size: 28px;
+		border-radius: 6px;border: none;
+		color:#68a2a9;
+		width:80%;
+		heigth:28px;
+	}
+	.button{
+		background-color: #4CAF50; /* Green */
+		border: none;
+		border-radius: 6px;
+		color: white;
+		padding: 15px 28px;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 16px;
+	}
+    .left{
+        #background: red;
+		opacity:0.9;
+		background-color: #cad5d9;
+    }
+    .main{
+        #background: blue;
+		opacity:0.9;
+		background-color: #cad5d9;
+    }
+    .right{
+        #background:red;
+		opacity:0.9;
+		background-color: #cad5d9;
+	}
+	.title{
+		color:red;
+	}
+	.Words{
+		margin:6px;
+	}
