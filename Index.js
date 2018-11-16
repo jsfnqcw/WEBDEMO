@@ -18,8 +18,8 @@ app.use(express.static('public'));
 
 app.use("/",session({
     secret: '12345',
-    name: 'testapp',   //这里的name值得是cookie的name，默认cookie的name是：connect.sid
-    cookie: {maxAge: 1000*60*2},  //设置maxAge是80000ms，即80s后session和相应的cookie失效过期
+    name: 'webdemosession',   //这里的name值得是cookie的name，默认cookie的name是：connect.sid
+    cookie: {maxAge: 1000*60*60*2},  //设置maxAge是80000ms，即80s后session和相应的cookie失效过期
     resave: true,
     saveUninitialized: false,
 }));

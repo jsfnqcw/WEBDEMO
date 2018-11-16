@@ -1,5 +1,5 @@
 $(function() {
-  window.history.replaceState(null, null, "/");
+  //window.history.replaceState(null, null, "/");
   $("#account").text("当前登陆：" + window.localStorage.account);
 })
 

@@ -4,6 +4,8 @@
   margin: 0px;
   padding: 0px;
   border: 0px;
+  overflow-y: scroll;
+  background: rgba(218, 227, 240, 1);
 }
 
 .head {
@@ -12,10 +14,9 @@
   margin: 0px;
   padding: 0px;
   border: 0px;
-  position: fixed;
   background: rgba(170, 185, 190, 1);
-	overflow-y:hidden;
-	z-index: 1;
+  overflow-y: hidden;
+  z-index: 100;
 }
 
 .logo {
@@ -37,44 +38,81 @@
   font-family: Microsoft JhengHei;
   font-size: 20px;
   font-weight: 400;
-  color: rgba(130, 57, 53, 1);
-
 }
 
 .nav1 {
   float: left;
-	white-space:nowrap;
+  white-space: nowrap;
 }
 
 .nav2 {
   float: right;
-	margin: 20px 0px 0px 0px;
+  margin: 20px 0px 0px 0px;
 }
 
 .topbar li {
   float: left;
   list-style: none;
-	margin:0px 20px 0px 20px;
+  margin: 0px 20px 0px 20px;
 }
 
-a{
-  color:black;
+a {
+  color: black;
   text-align: center;
   text-decoration: none;
 }
 
-.slide {
-  width: 100%;
-  height: 100vh;
-  overflow:auto;
+.main {
+  width: calc(100% - 20px );
+  z-index: 1;
+  padding: 10px;
+  overflow-x: visible;
+}
 
-  background-repeat: no-repeat;
+
+@keyframes slider {
+  0%    {left:calc(0 * (100vw - 20px - 17px))}
+  10%  {left:calc(0 * (100vw - 20px - 17px))}
+  15%{left:calc(-1 * (100vw - 20px - 17px))}
+  35%{left:calc(-1 * (100vw - 20px - 17px))}
+  40%{left:calc(-2 * (100vw - 20px - 17px))}
+  60%{left:calc(-2 * (100vw - 20px - 17px))}
+  65%{left:calc(-3 * (100vw - 20px - 17px))}
+  85%{left:calc(-3 * (100vw - 20px - 17px))}
+  90%{left:calc(0 * (100vw - 20px - 17px))}
+  100%{left:calc(0 * (100vw - 20px - 17px))}
+}
+
+.slide{overflow: hidden;}
+
+.slidebar {
+  width: 400vw;
+  height: 80vh;
+  display: flex;
+  position: relative;
+  animation: slider 20s infinite;
+}
+
+.slidernav {
+  width: calc(100vw - 20px - 17px);
+  height: 80vh;
   background-size: cover;
+  background-position: 50% 50%;
+}
+
+
+#n1 {
+  background-image: url(../images/main1.jpg);
+}
+
+#n2 {
   background-image: url(../images/main2.jpg);
+}
 
-  margin: 0px;
-  padding: 0px;
-  border: 0px;
+#n3 {
+  background-image: url(../images/main3.jpg);
+}
 
-  z-index: -1;
+#n4 {
+  background-image: url(../images/main4.jpg);
 }
