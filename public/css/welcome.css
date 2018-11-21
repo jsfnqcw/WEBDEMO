@@ -6,7 +6,6 @@
   border: 0px;
   overflow-y: scroll;
   background: rgba(218, 227, 240, 1);
-  text-align: center;
 }
 
 .head {
@@ -68,4 +67,52 @@ a {
   z-index: 1;
   padding: 10px;
   overflow-x: visible;
+}
+
+
+@keyframes slider {
+  0%    {left:calc(0 * (100vw - 20px - 17px))}
+  10%  {left:calc(0 * (100vw - 20px - 17px))}
+  15%{left:calc(-1 * (100vw - 20px - 17px))}
+  35%{left:calc(-1 * (100vw - 20px - 17px))}
+  40%{left:calc(-2 * (100vw - 20px - 17px))}
+  60%{left:calc(-2 * (100vw - 20px - 17px))}
+  65%{left:calc(-3 * (100vw - 20px - 17px))}
+  85%{left:calc(-3 * (100vw - 20px - 17px))}
+  90%{left:calc(0 * (100vw - 20px - 17px))}
+  100%{left:calc(0 * (100vw - 20px - 17px))}
+}
+
+.slide{overflow: hidden;}
+
+.slidebar {
+  width: 400vw;
+  height: 90vh;
+  display: flex;
+  position: relative;
+  animation: slider 20s infinite;
+}
+
+.slidernav {
+  width: calc(100vw - 20px - 17px);
+  height: 90vh;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+
+#n1 {
+  background-image: url(../images/main1.jpg);
+}
+
+#n2 {
+  background-image: url(../images/main2.jpg);
+}
+
+#n3 {
+  background-image: url(../images/main3.jpg);
+}
+
+#n4 {
+  background-image: url(../images/main4.jpg);
 }
