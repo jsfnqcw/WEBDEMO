@@ -17,3 +17,9 @@ $(function (){
     cols = 5;
   }
 })
+
+
+function Loading(colId,content){
+  $("#"+colId).html(content);
+
+}

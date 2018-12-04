@@ -1,0 +1,89 @@
+.flowLoad {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 720px;
+  margin: auto;
+  text-align: center;
+  float: center;
+}
+
+.flowLoad .card {
+  display: flex;
+  width: inherit;
+  margin-top: 30px;
+}
+
+.flowLoad .user {
+  width: 20%;
+
+}
+
+.flowLoad .user img {
+  width: 60%;
+  float: left;
+  background-color: rgba(252, 246, 255, 1);
+  box-shadow: 1px 1px 1px;
+}
+
+.flowLoad .content {
+  width: 80%;
+  background-color: rgba(252, 246, 255, 1);
+  box-shadow: 1px 1px 2px;
+}
+
+.flowLoad .cardTop {
+  display: flex;
+  justify-content: flex-start;
+  color: rgba(100, 100, 100, 1);
+  text-align: justify;
+  font-family: "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", tahoma, arial, simsun, "宋体";
+  font-size: 16px;
+  margin-left: 30px;
+  margin-top: 10px;
+}
+
+.flowLoad .cardLine {
+  overflow-x: hidden;
+  display: flex;
+}
+
+.flowLoad .cardLine img {
+  width: 200px;
+  margin-left: 30px;
+  margin-top: 10px;
+}
+
+.flowLoad .txt {
+  margin-left: 30px;
+  margin-top: 10px;
+  margin-right: 30px;
+  color: rgba(130, 130, 130, 1);
+  text-align: left;
+  font-family: "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", tahoma, arial, simsun, "宋体";
+  font-size: 14px;
+}
+
+
+.flowLoad .cardDown {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin: 10px 30px 20px 30px;
+  width: inherit;
+}
+.flowLoad .cardDown img{
+  width: 15px;
+  height: 15px;
+}
+
+.flowLoad .cardDown a {
+  box-shadow: 2px 2px 1px;
+  background-color: #82c0af;
+  color: #ffffff;
+  border-radius: 3px;
+  margin: 0px 8px 0px 8px;
+  padding: 0px 6px 0px 6px;
+  font-size: 8px;
+
+}

@@ -28,6 +28,7 @@ app.use(bodyParser.json());
 app.use(cookieParser());
 app.use('/user',require('./routers/user.js'));
 app.use('/',require('./routers/main.js'));
+app.use('/content',require('./routers/content.js'));
 
 
 

@@ -5,10 +5,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <script src="js/jquery.js"></script>
-  <script src="js/flowLoad.js"></script>
+
   <link href="./css/main.css" rel="stylesheet" type="text/css" />
-  <link href="./css/flowLoad.css" rel="stylesheet" type="text/css" />
+  <link href="./css/lineFlow.css" rel="stylesheet" type="text/css" />
+  <script src="js/jquery.js"></script>
+  <script src="js/lineFlow.js"></script>
   <title>原色</title>
 </head>
 
@@ -32,86 +33,52 @@
   <div class="main">
 
     <br>
+    <div class="toptext">
+      <div class="new">
+        <img src="./images/icons/icon3.png" alt="" onclick="">
+        <img src="./images/icons/icon4.png" alt="" onclick="">
+        <img src="./images/icons/icon5.png" alt="" onclick="">
+        <img src="./images/icons/icon6.png" alt="" onclick="">
+      </div>
+
+      <form id="new" name="uploadForm" id="uploadForm" method="post" enctype="multipart/form-data" action="/newComments" target="uploadFrame">
+        <p>上传图片:
+          <input type="file" name="imageFile" multiple="multiple" />
+        </p>
+        <textarea type="text" name="name" placeholder="说点什么吧......"></textarea>
+        <p><input type="submit" id="fileSubmit" value="提交" />
+          <input type="button" id="cancel" value="取消" /></p>
+      </form>
+    </div>
 
     <div class="flowLoad">
-      <div class="col" id="col1" >
-
-        <div class="card">
+      <div class="card">
+        <div class="user">
+          <img src="./images/icons/icon1.png" alt="">
+        </div>
+        <div class="content">
           <div class="cardTop">
-            <img src="../images/icon1.png" alt="">
-            <p>用户ID</p>
-          </div>
-          <div class="cardImg">
-            <img src="../images/1.jpg" alt="">
+            <p>观察者</p><br>
           </div>
           <div class="cardLine">
+            <div class="cardImg">
+              <img src="../images/1.jpg" alt="">
+            </div>
             <div class="txt">
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 我们之所以战斗不是为了改变世界，而是为了不让世界改变我们。冬天之所以那么冷是为了告诉大家身边人的温暖有多重要。世界上最美丽最珍贵的，反而是听不见且看不清的，只能用心才能感受得到。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ――《熔炉》
             </div>
           </div>
-          <hr />
           <div class="cardDown">
-            <div>冬天</div>
-            <div>电影推荐</div>
-            <div>道具</div>
-            <div>我们</div>
-            <div>冬天</div>
-            <div>电影推荐</div>
-            <div>道具</div>
-            <div>我们</div>
+            <img src="./images/icons/icon2.png" alt="">
+            <a class="label" href="">熔炉</a>
+            <a class="label" href="">城市</a>
           </div>
-
         </div>
-
       </div>
-      <div class="col" id="col2"></div>
-      <div class="col" id="col3"></div>
-      <div class="col" id="col4"></div>
-      <div class="col" id="col5"></div>
 
 
     </div>
 
-    <p>ukewgfuiqgegfiuihw</p><br>
-    <p>ukewgfuiqgegfiuihw</p><br>
-    <p>ukewgfuiqgegfiuihw</p><br>
-    <p>ukewgfuiqgegfiuihw</p><br>
-    <p>ukewgfuiqgegfiuihw</p><br>
-    <p>ukewgfuiqgegfiuihw</p><br>
-    <p>ukewgfuiqgegfiuihw</p><br>
-    <p>ukewgfuiqgegfiuihw</p><br>
-    <p>ukewgfuiqgegfiuihw</p><br>
-    <p>ukewgfuiqgegfiuihw</p><br>
-    <p>ukewgfuiqgegfiuihw</p><br>
-    <p>ukewgfuiqgegfiuihw</p><br>
-    <p>ukewgfuiqgegfiuihw</p><br>
-    <p>ukewgfuiqgegfiuihw</p><br>
-    <p>ukewgfuiqgegfiuihw</p><br>
-    <p>ukewgfuiqgegfiuihw</p><br>
-    <p>ukewgfuiqgegfiuihw</p><br>
-    <p>ukewgfuiqgegfiuihw</p><br>
-    <p>ukewgfuiqgegfiuihw</p><br>
-    <p>ukewgfuiqgegfiuihw</p><br>
-    <p>ukewgfuiqgegfiuihw</p><br>
-    <p>ukewgfuiqgegfiuihw</p><br>
-    <p>ukewgfuiqgegfiuihw</p><br>
-    <p>ukewgfuiqgegfiuihw</p><br>
-    <p>ukewgfuiqgegfiuihw</p><br>
-    <p>ukewgfuiqgegfiuihw</p><br>
-    <p>ukewgfuiqgegfiuihw</p><br>
-    <p>ukewgfuiqgegfiuihw</p><br>
-    <p>ukewgfuiqgegfiuihw</p><br>
-    <p>ukewgfuiqgegfiuihw</p><br>
-    <p>ukewgfuiqgegfiuihw</p><br>
-    <p>ukewgfuiqgegfiuihw</p><br>
-    <p>ukewgfuiqgegfiuihw</p><br>
-    <p>ukewgfuiqgegfiuihw</p><br>
-    <p>ukewgfuiqgegfiuihw</p><br>
-    <p>ukewgfuiqgegfiuihw</p><br>
-    <p>ukewgfuiqgegfiuihw</p><br>
-    <p>ukewgfuiqgegfiuihw</p><br>
-    <p>ukewgfuiqgegfiuihw</p><br>
-    <p>ukewgfuiqgegfiuihw</p><br>
   </div>
 
 </body>

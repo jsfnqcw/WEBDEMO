@@ -18,3 +18,12 @@ $("#logout").click(function() {
       }
     });
 })
+
+
+$(".new").click(function() {
+  $("#new").slideToggle("slow");
+})
+
+$("#cancel").click(function() {
+  $("#new").slideUp("slow");
+})
